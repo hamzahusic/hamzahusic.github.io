@@ -185,7 +185,7 @@ header{
 
 @media all and (max-width:940px){
     nav{
-        padding: 10px 50px 10px 30px;
+        padding: 10px 30px 10px 10px;
     }
     .menu{
         display: block;
