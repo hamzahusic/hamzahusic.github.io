@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Raleway', sans-serif;
-    background-color: black;
+    background-color: white;
 }
 nav{
     display: flex;
@@ -30,7 +30,7 @@ nav{
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
-    padding: 10px;
+    padding: 10px 10px 10px 0px;
     font-size: 21px;
     letter-spacing: 6px;
     margin: 10px;
@@ -124,3 +124,46 @@ nav{
         font-size: 18px;
     }
 }
+
+.pocetna{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 250px;
+}
+.lijeva-strana{
+    width: 50%;
+}
+.lijeva-strana h1{
+    font-size: 45px;
+}
+.lijeva-strana p{
+    margin: 30px 0 50px 0;
+    font-size: 25px;
+}
+.desna-strana{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.desna-strana img{
+    border-radius: 50%;
+}
+#more{
+    border: 2px solid red;
+    background-color: transparent;
+    color: red;
+    padding: 20px 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#more:hover{
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
+#NAME{
+    color: rgb(173, 0, 0);
+}
+
