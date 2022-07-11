@@ -254,6 +254,10 @@ header{
         padding: 10px 10px 10px 0;
         font-size: 18px;
     }
+    .lijeva-strana{
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
     .lijeva-strana h1{
         font-size: 35px;
     }
@@ -263,7 +267,7 @@ header{
     }
     .socials a{
         font-size: 40px;
-        padding: 20px;
+        padding: 25px;
     }
     #mark-quote{
         text-align: center;
@@ -279,11 +283,11 @@ header{
     }
 }
 @media all and (max-width:430px) {
-    .socials a{
-        font-size: 40px;
-        padding: 10px;
-    }
     .pocetna{
         padding: 20px 20px 70px 20px;
+    }
+    .socials a{
+        font-size: 40px;
+        padding: 15px;
     }
 }
