@@ -214,6 +214,8 @@ header{
     }
     #contact{
         padding: 20px 180px;
+        background-color: red;
+        color: white;
     }
     .nav-links{
         display: none;
