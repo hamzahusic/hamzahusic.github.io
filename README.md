@@ -1,2 +1,4 @@
 # Checkout my website
-## Click this link: [hamzahusic.github.io](hamzahusic.github.io)
+
+##If you want to know more about me and what I do click the link
+## Click this link: [hamzahusic.github.io](https://hamzahusic.github.io/)
