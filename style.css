@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+}
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.logo{
+    display: flex;
+}
+#initials{
+    font-family:'Dancing Script', cursive;
+    border-right: 3px solid black;
+    font-size: 30px;
+    padding: 10px 30px 10px 10px;
+    margin: 10px;
+}
+#full-name-logo{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    font-size: 21px;
+    letter-spacing: 6px;
+    margin: 10px;
+}
+.nav-links a{
+    text-decoration:none;
+    color: black;
+    padding: 20px 30px;
+    font-weight: bold;
+}
+.nav-links a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+#contact{
+    background-color: red;
+    color: #fff;
+    border-radius: 20px;
+}
