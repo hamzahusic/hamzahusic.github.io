@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +8,14 @@
 body{
     font-family: 'Raleway', sans-serif;
     background-color: white;
+}
+::-moz-selection{
+    color: white;
+    background-color: red;
+}
+::selection{
+    color: white;
+    background-color: red;
 }
 nav{
     display: flex;
@@ -52,9 +61,16 @@ nav{
     border-radius: 20px;
 }
 #contact{
-    background-color: red;
-    color: #fff;
+    background-color: transparent;
+    color: red;
     border-radius: 20px;
+    border: 2px solid red;
+    padding: 18px 28px;
+}
+#contact:hover{
+    background-color: red;
+    color: white;
+    transition: 0.5s;
 }
 .menu{
     cursor: pointer;
@@ -68,68 +84,14 @@ nav{
 #line2{
     margin: 5px 0;
 }
-
-@media all and (max-width:940px){
-    nav{
-        padding: 10px 50px 10px 30px;
-    }
-    .menu{
-        display: block;
-    }
-    .nav-links ul{
-        padding: 50px 0 50px 0;
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: white;
-        top: 109px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        font-size: 15px;
-    }
-    .nav-links ul li{
-        padding: 50px 0;
-    }
-    .nav-links a{
-        text-decoration:none;
-        color: black;
-        padding: 25px 200px;
-        font-weight: bold;
-    }
-    .nav-links{
-        display: none;
-        z-index: 999;
-    }
-    .active{
-        display: block;
-    }
+header{
+    margin-bottom: 100px;
 }
-
-@media all and (max-width:490px){
-    nav{
-        padding: 0 50px 10px 10px;
-    }
-    .nav-links a{
-        padding: 25px 100px;
-    }
-    #initials{
-        border-right: 2px solid black;
-        font-size: 25px;
-        padding: 10px 30px 10px 10px;
-    }
-    #full-name-logo{
-        padding: 10px 10px 10px 0;
-        font-size: 18px;
-    }
-}
-
 .pocetna{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 150px 250px;
+    padding: 150px 250px 150px 250px;
 }
 .lijeva-strana{
     width: 50%;
@@ -166,4 +128,159 @@ nav{
 #NAME{
     color: rgb(173, 0, 0);
 }
+.socials{
+    padding: 0 150px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials a{
+    text-decoration: none;
+    color: red;
+    font-size: 40px;
+    padding: 30px;
+}
+#mark-quote{
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+.about-me{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
 
+@media all and (max-width:1500px){
+    .pocetna{
+        padding: 150px 150px 150px 150px;
+    }
+}
+
+@media all and (max-width:1320px){
+    .pocetna{
+        padding: 150px 100px 150px 100px;
+    }
+    #mark-quote{
+        font-size: 14px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .socials{
+        padding: 0 50px 0 50px;
+    }
+}
+
+@media all and (max-width:1100px){
+    .socials{
+        padding: 0 50px 0 50px;
+        flex-direction: column;
+    }
+    #mark-quote{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    header{
+        margin-bottom: 50px;
+    }
+}
+
+@media all and (max-width:940px){
+    nav{
+        padding: 10px 50px 10px 30px;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-links ul{
+        padding: 50px 0 50px 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.733);
+        top: 109px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 15px;
+    }
+    .nav-links ul li{
+        padding: 50px 0;
+    }
+    .nav-links a{
+        text-decoration:none;
+        color: white;
+        padding: 25px 200px;
+        font-weight: bolder;
+    }
+    #contact{
+        padding: 20px 180px;
+    }
+    .nav-links{
+        display: none;
+        z-index: 999;
+    }
+    .active{
+        display: block;
+    }
+    .pocetna{
+        flex-direction: column-reverse;
+        padding: 20px 50px 50px 50px;
+    }
+    .lijeva-strana{
+        width: 90%;
+    }
+    .lijeva-strana h1{
+        font-size: 45px;
+    }
+    .lijeva-strana p{
+        margin: 30px 0 50px 0;
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width:500px){
+    nav{
+        padding: 0 50px 10px 10px;
+    }
+    .nav-links a{
+        padding: 25px 100px;
+    }
+    #initials{
+        border-right: 2px solid black;
+        font-size: 25px;
+        padding: 10px 30px 10px 10px;
+    }
+    #full-name-logo{
+        padding: 10px 10px 10px 0;
+        font-size: 18px;
+    }
+    .lijeva-strana h1{
+        font-size: 35px;
+    }
+    .lijeva-strana p{
+        margin: 30px 0 50px 0;
+        font-size: 20px;
+    }
+    .socials a{
+        font-size: 40px;
+        padding: 20px;
+    }
+    #mark-quote{
+        text-align: center;
+    }
+    .desna-strana img{
+         height: 300px;
+    }
+    .pocetna{
+        padding: 20px 50px 50px 50px;
+    }
+}
+@media all and (max-width:430px) {
+    .socials a{
+        font-size: 40px;
+        padding: 10px;
+    }
+    .pocetna{
+        padding: 20px 20px 70px 20px;
+    }
+}
