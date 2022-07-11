@@ -14,6 +14,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
+    height: 110px;
 }
 .logo{
     display: flex;
@@ -34,11 +35,16 @@ nav{
     letter-spacing: 6px;
     margin: 10px;
 }
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+}
 .nav-links a{
     text-decoration:none;
     color: black;
     padding: 20px 30px;
     font-weight: bold;
+    margin: 0 5px;
 }
 .nav-links a:hover{
     background-color: black;
@@ -49,4 +55,72 @@ nav{
     background-color: red;
     color: #fff;
     border-radius: 20px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+#line1,#line2,#line3{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+#line2{
+    margin: 5px 0;
+}
+
+@media all and (max-width:940px){
+    nav{
+        padding: 10px 50px 10px 30px;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-links ul{
+        padding: 50px 0 50px 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        top: 109px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 15px;
+    }
+    .nav-links ul li{
+        padding: 50px 0;
+    }
+    .nav-links a{
+        text-decoration:none;
+        color: black;
+        padding: 25px 200px;
+        font-weight: bold;
+    }
+    .nav-links{
+        display: none;
+        z-index: 999;
+    }
+    .active{
+        display: block;
+    }
+}
+
+@media all and (max-width:490px){
+    nav{
+        padding: 0 50px 10px 10px;
+    }
+    .nav-links a{
+        padding: 25px 100px;
+    }
+    #initials{
+        border-right: 2px solid black;
+        font-size: 25px;
+        padding: 10px 30px 10px 10px;
+    }
+    #full-name-logo{
+        padding: 10px 10px 10px 0;
+        font-size: 18px;
+    }
 }
