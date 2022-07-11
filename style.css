@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +8,14 @@
 body{
     font-family: 'Raleway', sans-serif;
     background-color: white;
+}
+::-moz-selection{
+    color: white;
+    background-color: red;
+}
+::selection{
+    color: white;
+    background-color: red;
 }
 nav{
     display: flex;
@@ -55,6 +64,12 @@ nav{
     background-color: red;
     color: #fff;
     border-radius: 20px;
+}
+#contact:hover{
+    background-color: transparent;
+    color: red;
+    transition: 0.5s;
+    border: 2px solid red;
 }
 .menu{
     cursor: pointer;
@@ -166,4 +181,19 @@ nav{
 #NAME{
     color: rgb(173, 0, 0);
 }
-
+.socials{
+    padding: 0 150px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials a{
+    text-decoration: none;
+    color: red;
+    font-size: 40px;
+    padding: 30px;
+}
+#mark-quote{
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+}
