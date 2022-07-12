@@ -148,7 +148,7 @@ header{
     background-image: url(./img/about_me_background.jpg);
     color: white;
     align-items: center;
-    padding: 100px 300px;
+    padding: 100px 300px 150px 300px;
 }
 .about-me-naslov{
     text-align: center;
@@ -193,13 +193,18 @@ header{
 }
 
 
-
-
-
+@media all and (max-width:1650px){
+    .about-me{
+        padding: 100px 200px 150px 200px;
+    }
+}
 
 @media all and (max-width:1500px){
     .pocetna{
         padding: 150px 150px 150px 150px;
+    }
+    .about-me{
+        padding: 100px 100px 150px 100px;
     }
 }
 
@@ -214,6 +219,33 @@ header{
     .socials{
         padding: 0 50px 0 50px;
     }
+    .about-me{
+        padding: 100px 50px 150px 50px;
+    }
+    .about-me-naslov{
+        margin: 0 0 50px 0;
+        font-size: 15px;
+    }
+    .about-me-section{   
+        padding: 50px;
+    }
+    .about-me-pic img{
+        height: 400px;
+    }
+    .about-me-text {
+        width: 50%;
+        font-size: 25px;
+    }
+    .about-me-h2{
+        margin: 0 0 20px 0;
+    }
+    .about-me-text-p{
+        margin: 30px 0 0 0;
+        font-size: 18px;
+    }
+    .about-me-lang{
+        font-size: 35px;
+    }
 }
 
 @media all and (max-width:1100px){
@@ -227,6 +259,47 @@ header{
     }
     header{
         margin-bottom: 50px;
+    }
+    .about-me{
+        padding: 100px 50px 150px 50px;
+        text-align: center;
+    }
+    .about-me-naslov{
+        margin: 0 0 50px 0;
+        font-size: 15px;
+    }
+    .about-me-section{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        border-radius: 30px;
+    }
+    .about-me-pic img{
+        height: 350px;
+        border-radius: 50%;
+    }
+    .about-me-text {
+        width: 100%;
+    }
+    .about-me-h2{
+        font-size: 20px;
+        margin: 0 0 20px 0;
+        padding-top: 20px;
+    }
+    .about-me-text-p{
+        margin: 30px 0 0 0;
+        font-size: 16px;
+    }
+    .about-me-lang{
+        justify-content: center;
+        font-size: 32px;
+    }
+    .about-me-lang p{
+        padding: 20px 20px 0 0;  
+    }
+    #aristotle-quote{
+        padding: 30px 0 0 0;
+        font-size: 25px;
     }
 }
 
@@ -285,6 +358,41 @@ header{
         margin: 30px 0 50px 0;
         font-size: 25px;
     }
+    .about-me{
+        padding: 100px 50px 150px 50px;
+    }
+    .about-me-naslov{
+        margin: 0 0 50px 0;
+        font-size: 15px;
+    }
+    .about-me-section{   
+        padding: 50px;
+    }
+    .about-me-pic img{
+        height: 300px;
+    }
+    .about-me-text {
+        width: 100%;
+    }
+    .about-me-h2{
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+    .about-me-text-p{
+        margin: 30px 0 0 0;
+        font-size: 20px;
+    }
+    .about-me-lang{
+        justify-content: center;
+        font-size: 32px;
+    }
+    .about-me-lang p{
+        padding: 20px 20px 0 0;  
+    }
+    #aristotle-quote{
+        padding: 30px 0 0 0;
+        font-size: 22px;
+    }
 }
 
 @media all and (max-width:500px){
@@ -327,6 +435,41 @@ header{
     #contact{
         padding: 20px 130px;
     }
+    .about-me{
+        padding: 80px 20px 100px 20px;
+    }
+    .about-me-naslov{
+        margin: 0 0 50px 0;
+        font-size: 15px;
+    }
+    .about-me-section{   
+        padding: 20px;
+    }
+    .about-me-pic img{
+        height: 300px;
+    }
+    .about-me-text {
+        width: 100%;
+    }
+    .about-me-h2{
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+    .about-me-text-p{
+        margin: 30px 0 0 0;
+        font-size: 20px;
+    }
+    .about-me-lang{
+        justify-content: center;
+        font-size: 32px;
+    }
+    .about-me-lang p{
+        padding: 20px 20px 0 0;  
+    }
+    #aristotle-quote{
+        padding: 30px 0 0 0;
+        font-size: 22px;
+    }
 }
 @media all and (max-width:460px) {
     .pocetna{
@@ -335,5 +478,10 @@ header{
     .socials a{
         font-size: 40px;
         padding: 11px;
+    }
+}
+@media all and (max-width:390px){
+    .about-me-pic img{
+        height: 250px;
     }
 }
