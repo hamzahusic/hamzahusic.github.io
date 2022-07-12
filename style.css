@@ -145,10 +145,57 @@ header{
     font-family: 'Dancing Script', cursive;
 }
 .about-me{
-    background-color: black;
+    background-image: url(./img/about_me_background.jpg);
     color: white;
-    text-align: center;
+    align-items: center;
+    padding: 100px 300px;
 }
+.about-me-naslov{
+    text-align: center;
+    margin: 0 0 70px 0;
+    font-size: 20px;
+}
+
+.about-me-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+.about-me-text {
+    width: 50%;
+    font-size: 25px;
+}
+.about-me-h2{
+    margin: 0 0 20px 0;
+}
+.about-me-text-p{
+    margin: 30px 0 0 0;
+    font-size: 20px;
+}
+.about-me-lang{
+    display: flex;
+    font-size: 40px;
+}
+.about-me-lang p{
+    padding: 20px 20px 0 0;
+    color: red;
+}
+
+#aristotle-quote{
+    padding: 40px 0 0 0;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+
+
+
+
 
 @media all and (max-width:1500px){
     .pocetna{
