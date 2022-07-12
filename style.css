@@ -6,6 +6,9 @@
     margin: 0;
     scroll-behavior: smooth;
 }
+html:focus-within {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Raleway', sans-serif;
     background-color: white;
