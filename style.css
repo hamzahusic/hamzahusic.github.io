@@ -265,7 +265,6 @@ header{
     background-color: white;
     color: red;
     transition: 0.5s;
-    border-color: red;
 }
 .recent-projects{
     padding:50px 100px 50px 100px;
@@ -298,6 +297,7 @@ header{
 footer{
     color: white;
     background-color: black;
+    text-align: center;/*IZBRISI OVO POSLIJE*/
 }
 
 @media all and (max-width:1650px){
@@ -312,6 +312,15 @@ footer{
     }
     .about-me{
         padding: 100px 100px 150px 100px;
+    }
+}
+@media all and (max-width:1360px){
+    .project-links{
+        display: flex;
+        flex-direction: column;
+    }
+    #secondLink{
+        margin: 10px 10px 0 0;
     }
 }
 
@@ -352,6 +361,12 @@ footer{
     }
     .about-me-lang{
         font-size: 35px;
+    }
+    .project-content{
+        padding: 20px 15px;
+    }
+    .tekst-projekta{
+        margin: 30px 0;
     }
 }
 
@@ -407,6 +422,9 @@ footer{
     #aristotle-quote{
         padding: 30px 0 0 0;
         font-size: 25px;
+    }
+    .recent-projects{
+        padding:50px 50px 50px 50px;
     }
 }
 
@@ -500,6 +518,21 @@ footer{
         padding: 30px 0 0 0;
         font-size: 22px;
     }
+    .recent-projects-tab{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-template-rows: 400px 400px;
+    }
+    .recent-projects{
+        padding:50px 20px 50px 20px;
+    }
+}
+
+@media all and (max-width:580px){
+    .tekst-projekta{
+        margin: 20px 0;
+    }
 }
 
 @media all and (max-width:500px){
@@ -576,6 +609,15 @@ footer{
     #aristotle-quote{
         padding: 30px 0 0 0;
         font-size: 22px;
+    }
+    .recent-projects-tab{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        grid-template-rows: 400px 400px 400px 400px;
+    }
+    .recent-projects{
+        padding:50px 20px 50px 20px;
     }
 }
 @media all and (max-width:460px) {
