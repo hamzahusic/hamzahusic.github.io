@@ -7,10 +7,11 @@
     <title>Portfolio - Hamza Husić</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/0113846820.js" crossorigin="anonymous"></script>
 </head>
 <body>
-      <header>
+      <header data-aos="fade-right">
              <nav>
                 <div class="logo">
                  <div id="initials">
@@ -63,7 +64,7 @@
               <div class="about-me-naslov">
                  <h1 id="more-abt">More about me</h1>
               </div>
-              <div class="about-me-section">
+              <div class="about-me-section" data-aos="zoom-in">
                  <div class="about-me-pic">
                     <img src="./img/pic2.jpg" alt="My pic" height="450px">
                  </div>
@@ -92,7 +93,7 @@
                <h1>Recent projects</h1>
             </div>
             <div class="recent-projects-tab">
-               <div class="first-project" id="tabb">
+               <div class="first-project" id="tabb" data-aos="fade-left">
                   <div class="imeProjekta">
                   <p>First project</p>
                   <p id="hoverInfo">- Hover over the image to see details -</p>
@@ -110,7 +111,7 @@
                      </div>
                   </div>
                </div>
-               <div class="second-project" id="tabb">
+               <div class="second-project" id="tabb" data-aos="fade-left">
                      <div class="imeProjekta">
                      <p>Second project</p>
                      <p id="hoverInfo">- Hover over the image to see details -</p>
@@ -128,7 +129,7 @@
                         </div>
                      </div>
                </div>
-               <div class="third-project" id="tabb">
+               <div class="third-project" id="tabb" data-aos="fade-left">
                      <div class="imeProjekta">
                      <p>Third project</p>
                      <p id="hoverInfo">- Hover over the image to see details -</p>
@@ -146,7 +147,7 @@
                         </div>
                      </div>
                </div>
-               <div class="fourth-project" id="tabb">
+               <div class="fourth-project" id="tabb" data-aos="fade-left">
                      <div class="imeProjekta">
                      <p>Fourth project</p>
                      <p id="hoverInfo">- Hover over the image to see details -</p>
@@ -164,7 +165,7 @@
                         </div>
                      </div>
                </div>
-               <div class="more-projects" id="tabb">
+               <div class="more-projects" id="tabb" data-aos="fade-left">
                   <div class="imeProjekta">
                   <p>More Projects</p>
                   <p id="hoverInfo">- Hover over the image to see details -</p>
@@ -188,7 +189,7 @@
          <div class="footer-content">
          <div class="footer-lijeva">
             <h1 id="contactMe">Contact</h1>
-            <h1><i class="fa-solid fa-envelope-open-text"></i></h1>
+            <h1><i class="fa-solid fa-envelope-open-text" id="koverta"></i></h1>
             <h1>Follow Me On Social Media</h1>
             <div class="footer-text">
                <p>For more information about what I do and about me, feel free to get in touch.</p>
@@ -230,5 +231,12 @@
          </div>
       </footer>
       <script src="app.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+            AOS.init({
+               duration: 1250,
+               once:true
+            });
+         </script>
 </body>
 </html>

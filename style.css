@@ -388,6 +388,13 @@ footer button{
     color: white;
     margin: 0 10px;
 }
+#about-me-cpp{
+    padding: 20px 0 0 0;
+}
+#koverta{
+    padding: 0 0 20px 0;
+}
+
 @media all and (max-width:1840px){
     footer{
         padding: 120px 250px 20px 250px;
@@ -854,6 +861,9 @@ footer button{
     }
     .footer-lijeva a{
         padding: 0 15px 0 0;
+    }
+    #contact{
+        padding: 18px 85px;
     }
 }
 @media all and (max-width:340px){
