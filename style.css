@@ -12,6 +12,7 @@ html:focus-within {
 body{
     font-family: 'Raleway', sans-serif;
     background-color: white;
+    overflow-x: hidden;
 }
 ::-moz-selection{
     color: white;
