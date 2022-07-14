@@ -313,6 +313,9 @@ footer{
     .about-me{
         padding: 100px 100px 150px 100px;
     }
+    .recent-projects{
+        padding:50px 50px 50px 50px;
+    }
 }
 @media all and (max-width:1360px){
     .project-links{
@@ -527,6 +530,19 @@ footer{
     .recent-projects{
         padding:50px 20px 50px 20px;
     }
+    .nema{
+        display: none;
+    }
+    .okreniDesno{
+        transform: rotate(45deg);
+        position: relative;
+        bottom: 2px;
+        transition: 0.5s;
+    }
+    .okreniLijevo{
+        transform: rotate(-45deg);
+        transition: 0.5s;
+    }
 }
 
 @media all and (max-width:580px){
@@ -618,6 +634,9 @@ footer{
     }
     .recent-projects{
         padding:50px 20px 50px 20px;
+    }
+    .imeProjekta{
+        font-size: 18px;
     }
 }
 @media all and (max-width:460px) {
