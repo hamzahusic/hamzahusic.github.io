@@ -314,13 +314,7 @@ footer{
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4.9px);
 }
-.footer-lijeva h1{
-    padding: 0 0 10px 0;
-    font-size: 40px;
-}
-.footer-lijeva p{
-    font-size: 20px;
-}
+
 .footer-lijeva a{
     text-decoration: none;
     color: red;
@@ -394,12 +388,22 @@ footer button{
     color: white;
     margin: 0 10px;
 }
+@media all and (max-width:1840px){
+    footer{
+        padding: 120px 250px 20px 250px;
+    }
+}
+@media all and (max-width:1750px){
+    footer{
+        padding: 120px 100px 20px 100px;
+    }
+}
 @media all and (max-width:1650px){
     .about-me{
         padding: 100px 200px 150px 200px;
     }
     footer{
-        padding: 120px 100px;
+        padding: 120px 100px 20px 100px;
     }
 }
 
@@ -414,7 +418,7 @@ footer button{
         padding:50px 50px 50px 50px;
     }
     footer{
-        padding: 120px 50px;
+        padding: 120px 50px 20px 50px;
     }
 }
 @media all and (max-width:1360px){
@@ -484,7 +488,7 @@ footer button{
         border-bottom: 2px solid white;
     }
     .footer-desna{
-        width: 80%;
+        width: 100%;
     }
     .footer-desna textarea{
         width: 100%;
@@ -512,6 +516,9 @@ footer button{
         margin: 5px 0 5px 5px;
         border-radius: 5px;
         border: none;
+    }
+    footer{
+        padding: 120px 200px 20px 200px;
     }
 }
 
@@ -685,11 +692,58 @@ footer button{
         transform: rotate(-45deg);
         transition: 0.5s;
     }
+    footer{
+        padding: 120px 30px 20px 30px;
+    }
 }
 
 @media all and (max-width:580px){
     .tekst-projekta{
         margin: 20px 0;
+    }
+    .form-info-name{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-desna input[type=text]{
+        padding: 10px;
+        margin: 5px 0px 5px 0;
+        border-radius: 5px;
+        border: none; 
+    }
+    .footer-desna input[type=email]{
+        padding: 10px;
+        margin: 5px 0 5px 0px;
+        border-radius: 5px;
+        border: none;
+    }
+    .footer-desna h1{
+        font-size: 20px;
+    }
+    #contactMe{
+        font-size: 30px;
+    }
+    .footer-lijeva h1{
+        padding: 0 0 0 0;
+        font-size: 30px;
+    }
+    .footer-lijeva p{
+        font-size: 20px;
+    }
+    .footer-content{
+        padding: 20px;
+    }
+    .copyRight{
+        flex-direction: column;
+    }
+    .cop{
+        margin: 0 0 10px 0;
+    }
+    footer{
+        padding: 50px 10px 20px 10px;
+    }
+    .contactLinks{
+        text-align: center;
     }
 }
 
@@ -793,5 +847,20 @@ footer button{
 @media all and (max-width:390px){
     .about-me-pic img{
         height: 250px;
+    }
+    .contactLinks{
+        font-size: 15px;
+    }
+    .footer-lijeva a{
+        padding: 0 15px 0 0;
+    }
+}
+@media all and (max-width:340px){
+    .nav-links a{
+        padding: 25px 100px;
+        font-weight: bolder;
+    }
+    #contact{
+        padding: 18px 85px;
     }
 }
