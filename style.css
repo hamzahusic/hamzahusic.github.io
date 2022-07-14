@@ -479,13 +479,14 @@ footer button{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         padding: 50px;
         border-radius: 20px;
     }
     .footer-lijeva{
         padding: 0 0 20px 0;
         border-bottom: 2px solid white;
+        width: 100%;
     }
     .footer-desna{
         width: 100%;
