@@ -227,6 +227,10 @@ header{
     color: white;
     background-image: url(./img/Project4.jpg);
 }
+.more-projects{
+    color: white;
+    background-image: url(./img/moreProjects.jpg);
+}
 .imeProjekta{
     display: block;
     font-size: 20px;
@@ -525,7 +529,7 @@ footer{
         display:grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        grid-template-rows: 400px 400px;
+        grid-template-rows: 400px 400px 400px;
     }
     .recent-projects{
         padding:50px 20px 50px 20px;
@@ -630,7 +634,7 @@ footer{
         display:grid;
         grid-template-columns: 1fr;
         gap: 20px;
-        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-rows: 400px 400px 400px 400px 400px;
     }
     .recent-projects{
         padding:50px 20px 50px 20px;
