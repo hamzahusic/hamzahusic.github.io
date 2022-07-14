@@ -536,7 +536,7 @@ footer{
     .okreniDesno{
         transform: rotate(45deg);
         position: relative;
-        bottom: 2px;
+        bottom:2.5px;
         transition: 0.5s;
     }
     .okreniLijevo{
