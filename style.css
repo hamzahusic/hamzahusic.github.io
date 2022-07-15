@@ -879,3 +879,15 @@ footer button{
         padding: 18px 85px;
     }
 }
+#backOnTop{
+    display: none;
+    border: none;
+    font-size: 50px;
+    position: fixed;
+    z-index: 999;
+    right: 30px;
+    bottom: 20px;
+    color: red;
+    cursor: pointer;
+    background-color: transparent;
+}

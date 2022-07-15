@@ -10,6 +10,8 @@ const projects = document.getElementById('Projects');
 const contact = document.getElementById('contact');
 //Ove sve iznad konstante su za navbar
 
+let backToTop = document.getElementById('backOnTop');
+
 hamburger.addEventListener('click', () => {
     lista.classList.toggle('active');
     lineOne.classList.toggle('okreniLijevo');
@@ -34,4 +36,20 @@ contact.addEventListener('click', () => {
     lineOne.classList.toggle('okreniLijevo');
     lineTwo.classList.toggle('nema');
     lineThree.classList.toggle('okreniDesno');
+})
+
+window.onscroll = function(){scrollFunction()};
+
+function scrollFunction(){
+    if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+        backToTop.style.display = "block";
+    }
+    else{
+        backToTop.style.display = "none";
+    }
+}
+
+backToTop.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 })
