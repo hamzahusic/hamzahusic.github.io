@@ -16,6 +16,8 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: white;
     position: relative;
+    max-width: 1920px;
+    margin:0 auto;
 }
 ::-moz-selection{
     color: white;
@@ -304,6 +306,7 @@ header{
 footer{
     padding: 120px 300px 20px 300px;
     background-image: url(./img/contact2.jpg);
+    width: 100%;
 }
 .footer-content{
     color: white;
