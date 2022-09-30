@@ -64,22 +64,13 @@ nav{
     padding: 20px 30px;
     font-weight: bold;
     margin: 0 5px;
-}
-.nav-links a:hover{
-    background-color: black;
-    color: white;
     border-radius: 20px;
 }
 .contact{
-    background-color: black;
     color: red;
     border-radius: 20px;
     padding: 18px 28px;
-}
-.contact:hover{
-    background-color: white;
-    color: black;
-    transition: 0.5s;
+    border: 2px solid white;
 }
 .menu{
     cursor: pointer;
