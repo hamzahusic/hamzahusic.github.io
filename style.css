@@ -108,11 +108,11 @@ header{
     font-size: 25px;
 }
 .desna-strana{
-    border-radius: 50%;
+    border-radius:50%;
     overflow: hidden;
 }
 .desna-strana img{
-    border-radius: 50%;
+   scale: 1.2;
 }
 #more{
     border: 2px solid red;
@@ -183,7 +183,7 @@ header{
 }
 .about-me-text-p{
     margin: 30px 0 0 0;
-    font-size: 20px;
+    font-size: 20px;text-align: justify;
 }
 .about-me-lang{
     display: flex;
@@ -460,9 +460,6 @@ footer button{
     .about-me-section{   
         padding: 50px;
     }
-    .about-me-pic img{
-        height: 400px;
-    }
     .about-me-text {
         width: 50%;
         font-size: 25px;
@@ -472,7 +469,7 @@ footer button{
     }
     .about-me-text-p{
         margin: 30px 0 0 0;
-        font-size: 18px;
+        text-align: center;
     }
     .about-me-lang{
         font-size: 35px;
@@ -557,10 +554,7 @@ footer button{
         padding: 50px;
         border-radius: 30px;
     }
-    .about-me-pic img{
-        height: 350px;
-        border-radius: 50%;
-    }
+
     .about-me-text {
         width: 100%;
     }
@@ -571,7 +565,6 @@ footer button{
     }
     .about-me-text-p{
         margin: 30px 0 0 0;
-        font-size: 16px;
     }
     .about-me-lang{
         justify-content: center;
@@ -657,9 +650,7 @@ footer button{
     .about-me-section{   
         padding: 50px;
     }
-    .about-me-pic img{
-        height: 300px;
-    }
+
     .about-me-text {
         width: 100%;
     }
@@ -728,6 +719,9 @@ footer button{
         margin: 5px 0 5px 0px;
         border-radius: 5px;
         border: none;
+    }
+    .about-me-pic img{
+        max-height: 400px;
     }
     .footer-desna h1{
         font-size: 20px;
@@ -809,9 +803,7 @@ footer button{
     .about-me-section{   
         padding: 20px;
     }
-    .about-me-pic img{
-        height: 300px;
-    }
+    
     .about-me-text {
         width: 100%;
     }
@@ -857,9 +849,7 @@ footer button{
     }
 }
 @media all and (max-width:390px){
-    .about-me-pic img{
-        height: 250px;
-    }
+
     .contactLinks{
         font-size: 15px;
     }
